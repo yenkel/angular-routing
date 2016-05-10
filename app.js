@@ -17,4 +17,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
     url: '/paragraph',
     templateUrl: 'partial-about-scotch.html'
   })
+  .state('scotch', {
+    url: '/scotch/:scotch',
+    templateUrl: function ($stateParams){
+      console.log($stateParams)
+      return 'partial-scotch-' + $stateParams.scotch + '.html';
+    }
+  })
 }); 
