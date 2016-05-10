@@ -13,4 +13,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
       $scope.scotches = ['Balvenie', 'The Balmore', 'Highland Park'];
     }
   })
+  .state('home.paragraph', {
+    url: '/paragraph',
+    templateUrl: 'partial-about-scotch.html'
+  })
 }); 
