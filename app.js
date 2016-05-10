@@ -8,6 +8,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
   })
   .state('home.list', {
     url: '/list',
-    templateUrl: 'partial-home-list.html'
+    templateUrl: 'partial-home-list.html',
+    controller: function($scope) {
+      $scope.scotches = ['Balvenie', 'The Balmore', 'Highland Park'];
+    }
   })
 }); 
