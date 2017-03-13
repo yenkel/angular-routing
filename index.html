@@ -1,17 +1,12 @@
 <!doctype html>
 <html>
 <head>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-  <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-  <script src="app.js"></script>
 </head>
-
+  
 <body ng-app="scotcha">
   <nav class="navbar navbar-inverse" role="navigation">
     <div class="navbar-header">
-      <a class="navbar-brand" ui-sref="#">Sotcha!</a>
+      <a class="navbar-brand" ui-sref="#">Scotcha!</a>
     </div>
     <ul class="nav navbar-nav">
       <li><a ui-sref="home">Home</a></li>
@@ -22,5 +17,7 @@
   <div class="container">
     <div ui-view></div>
   </div>
+  <script src="app.js"></script>
 </body>
+  
 </html>
